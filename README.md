@@ -40,6 +40,8 @@
 <p align="left">
   <a href="https://github.com/notxart/act">
     <img alt="My Repo" width="32.5%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=notxart&show_icons=false&theme=radical&text_color=fff&hide_border=true&repo=act" />
+  </a>
+  <a href="https://github.com/notxart/notxart">
     <img alt="My Repo" width="32.5%" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=notxart&show_icons=false&theme=radical&text_color=fff&hide_border=true&repo=notxart" />
   </a>
 </p>

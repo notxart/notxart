@@ -1,0 +1,64 @@
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Allows the action to push changes
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate General Stats
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          token: ${{ secrets.GITHUB_TOKEN }}
+          options: |
+            {
+              "username": "notxart",
+              "hide": "stars,contribs",
+              "show_icons": true,
+              "theme": "radical",
+              "title_color": "ff3068",
+              "icon_color": "fe428e",
+              "border_color": "f8d847",
+              "border_radius": 10
+            }
+          path: "profile/stats.svg"
+
+      - name: Generate Top Languages
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          token: ${{ secrets.GITHUB_TOKEN }}
+          options: |
+            {
+              "username": "notxart",
+              "langs_count": 4,
+              "layout": "compact",
+              "hide_title": true,
+              "theme": "radical",
+              "border_color": "f8d847",
+              "border_radius": 10
+            }
+          path: "profile/top-langs.svg"
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Stage the generated files
+          git add profile/*.svg
+          # Commit only if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update profile stats images [skip ci]"
+            git push
+          fi

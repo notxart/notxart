@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD033 -->
 <h1 align="center"> 𝐻𝑖 𝑡ℎ𝑒𝑟𝑒, 𝐼 𝑎𝑚 𝑇𝑟𝑎𝑥𝑡𝑜𝑛 <img alt="Hi" width="34" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" /></h1>
 
 <!-- Marquee stuff -->
@@ -23,9 +24,9 @@
   <tr>
     <td width="59%">
       <a href="https://github.com/notxart">
-        <img alt="GitHub Stats" width="100%" src="https://github-readme-stats.vercel.app/api?username=notxart&hide=stars,contribs&show_icons=true&theme=radical&title_color=ff3068?&icon_color=fe428e&border_color=f8d847&border_radius=10" />
+        <img alt="GitHub Stats" width="100%" src="./profile/stats.svg" />
         <img alt="GitHub Streak" width="100%" src="https://streak-stats.demolab.com?user=notxart&theme=radical&border_radius=10&mode=weekly&border=F8D847" />
-        <img alt="Most Used Languages" width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=notxart&langs_count=4&layout=compact&hide_title=true&theme=radical&border_color=f8d847&border_radius=10" />
+        <img alt="Most Used Languages" width="100%" src="./profile/top-langs.svg" />
       </a>
     </td>
     <td width="41%">

@@ -25,7 +25,7 @@
     <td width="59%">
       <a href="https://github.com/notxart">
         <img alt="GitHub Stats" width="100%" src="./profile/stats.svg" />
-        <img alt="GitHub Streak" width="100%" src="https://streak-stats.demolab.com?user=notxart&theme=radical&border_radius=10&mode=weekly&border=F8D847" />
+        <img alt="GitHub Streak" width="100%" src="https://github-readme-streak-stats-vijaypur.vercel.app/?user=notxart&theme=radical&border_radius=10&mode=weekly&border=F8D847" />
         <img alt="Most Used Languages" width="100%" src="./profile/top-langs.svg" />
       </a>
     </td>

@@ -33,6 +33,13 @@ jobs:
             }
           path: "profile/stats.svg"
 
+      - name: Generate Streak Stats
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=notxart&theme=radical&border_radius=10&mode=weekly&border=F8D847
+          path: profile/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate Top Languages
         uses: stats-organization/github-readme-stats-action@v2
         with:
